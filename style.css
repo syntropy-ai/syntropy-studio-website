@@ -47,11 +47,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 a {
   text-decoration: none;
-  color: var(--primaryOnDark);
+  color: var(--textSecondaryOnDark);
+  text-decoration: underline;
 }
 a:hover,
 a:active {
-  color: var(--primaryOnDark-lighter);
+  color: var(--textPrimaryOnDark);
 }
 
 /* Figure */
@@ -59,6 +60,7 @@ figure {
   width: 100%;
   display: block;
   border: 1px solid var(--borderOnDark);
+  margin: 0;
 }
 figcaption {
   padding: 4px;
@@ -74,10 +76,26 @@ figcaption {
 .layer {
   border-top: 1px solid var(--borderOnDark);
 }
+.layer__hero {
+  border-top: none;
+}
+.layer--inner {
+  padding: 8vw 0;
+}
+@media (max-width: 767px) {
+  .layer--inner {
+    padding: 44px 0;
+  }
+}
 .page-width {
   width: 92%;
   max-width: 1160px;
   margin: auto;
+}
+.page-width__thin {
+  width: 92%;
+  margin: auto;
+  max-width: 840px;
 }
 
 /* Section Header */
@@ -124,18 +142,77 @@ figcaption {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: all 0.1s ease;
+  text-decoration: none;
 }
 .btn:hover {
   background: rgba(255, 255, 255, 0.15);
   color: #fff;
 }
 
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  border-bottom: 1px solid var(--borderOnDark);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--darkestGrey);
+}
+.header--logo {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  flex-grow: 1;
+  text-decoration: none;
+}
+.header--logo img {
+  width: 2.25em;
+  height: auto;
+  margin-right: 0.75em;
+}
+.header--logo span {
+  color: var(--textPrimaryOnDark);
+  font-weight: 700;
+  font-size: 1em;
+}
+.header--nav {
+
+}
+.header--nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header--nav li {
+  display: inline-block;
+  margin-left: 16px;
+}
+.header--nav a {
+  color: var(--textSecondaryOnDark);
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+}
+.header--nav a:hover {
+  color: var(--textPrimaryOnDark);
+}
+@media (max-width: 767px) {
+  .header {
+    display: none;
+  }
+}
+
 /* Hero */
 .hero {
   padding: 10vw 0;
-  max-width: 840px;
-  margin: auto;
   text-align: center;
+}
+.hero--logo {
+  width: 40%;
+  max-width: 86px;
+  margin-bottom: 32px;
 }
 .hero--title {
   
@@ -153,14 +230,10 @@ figcaption {
 
 /* Demos */
 .demos {
-  padding: 7.5vw 0;
-  max-width: 840px;
-  margin: auto;
 }
 
 /* Why */
 .why {
-  padding: 7.5vw 0;
   text-align: center;
 }
 .why--header {
@@ -207,10 +280,17 @@ figcaption {
   margin-bottom: 0;
 }
 
+/* Pricing */
+.pricing {
+  text-align: center;
+}
+
 /* Docs */
 .docs {
-  padding: 7.5vw 0;
-  max-width: 768px;
-  margin: auto;
+  text-align: center;
+}
+
+/* Community */
+.community {
   text-align: center;
 }

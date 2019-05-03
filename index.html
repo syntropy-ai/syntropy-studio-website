@@ -2,14 +2,32 @@
 <html>
   <head>
     <title>Syntropy Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico"/>
   </head>
   <body>
+    <header class="header">
+      <a href="#" class="header--logo">
+        <img src="logo512.png" alt="Syntropy Studio Logo" />
+        <span>Syntropy Studio</span>
+      </a>
+      <nav class="header--nav">
+        <ul>
+          <li><a href="#demos">Demos</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#docs">Docs</a></li>
+          <li><a href="#community">Community</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="container">
       <section class="layer layer__hero">
-        <div class="page-width">
-          <div class="hero">
+        <div class="page-width__thin">
+          <div class="layer--inner hero">
+            <img src="logo512.png" class="hero--logo" alt="Syntropy Studio Logo" />
             <header class="hero--header section-header">
               <h1 class="hero--title section-header--title">Syntropy Studio</h1>
               <p class="hero--description section-header--intro">Syntropy Studio is a platform for developing collections of small JavaScript programs quickly and easily.</p>
@@ -23,9 +41,9 @@
           </div>
         </div>
       </section>
-      <section class="layer layer__demos">
+      <section id="demos" class="layer layer__demos">
         <div class="page-width">
-          <div class="demos">
+          <div class="layer--inner demos">
             <header class="demos--header section-header">
               <h2 class="demos--title section-header--title">Demo</h2>
             </header>
@@ -40,9 +58,9 @@
           </div>
         </div>
       </section>
-      <section class="layer layer__why">
+      <section id="features" class="layer layer__why">
         <div class="page-width">
-          <div class="why">
+          <div class="layer--inner why">
             <header class="why--header section-header">
               <h2 class="why--title section-header--title">Why Syntropy Studio?</h2>
             </header>
@@ -75,9 +93,19 @@
           </div>
         </div>
       </section>
-      <section class="layer layer__docs">
+      <section id="pricing" class="layer layer__pricing">
         <div class="page-width">
-          <div class="docs">
+          <div class="layer--inner pricing">
+            <header class="pricing--header section-header">
+              <h2 class="pricing--title section-header--title">Pricing</h2>
+              <p class="pricing--intro section-header--intro">Syntropy Studio is free for non-commercial use. If you want to use it at work, please <a href="mailto:info@syntropy.xyz">contact us</a>.</p>
+            </header>
+          </div>
+        </div>
+      </section>
+      <section id="docs" class="layer layer__docs">
+        <div class="page-width">
+          <div class="layer--inner docs">
             <header class="docs--header section-header">
               <h2 class="docs--title section-header--title">Documentation</h2>
             </header>
@@ -87,14 +115,14 @@
           </div>
         </div>
       </section>
-      <section class="layer layer__docs">
+      <section id="community" class="layer layer__community">
         <div class="page-width">
-          <div class="docs">
-            <header class="docs--header section-header">
-              <h2 class="docs--title section-header--title">Community</h2>
-              <p class="docs--description section-header--intro">We want your feedback! Ask questions, request features and complain about bugs on Gitter!</p>
+          <div class="layer--inner community">
+            <header class="community--header section-header">
+              <h2 class="community--title section-header--title">Community</h2>
+              <p class="community--description section-header--intro">We want your feedback! Ask questions, request features and complain about bugs on Gitter!</p>
             </header>
-            <div class="docs--content">
+            <div class="community--content">
               <a class="btn" href="https://gitter.im/syntropy-studio/chat" target="_blank">Join us on Gitter</a>
             </div>
           </div>
