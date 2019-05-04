@@ -29,6 +29,7 @@ body {
   color: var(--textSecondaryOnDark);
   font-size: var(--baseFontSize);
   line-height: var(--baseLineHeight);
+  scroll-behavior: smooth;
 }
 
 /* Rhythm */
