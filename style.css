@@ -269,7 +269,7 @@ figcaption {
   }
 }
 .why--reason {
-  margin: auto;
+  margin: 0 auto;
   max-width: 400px;
 }
 .why--reason-title {
